@@ -1,0 +1,75 @@
+一、Web项目开发软件的选取
+1. node.js
+2. git
+3. bower
+4. gulp
+5. yeoman
+
+二、软件安装和使用
+1. node.js
+
+查看版本号node -v
+
+ctrl+c 或 ctrl+d 退出
+
+2. npm
+
+测试是否安装 npm -v
+
+npm install -global <软件名>
+npm install --save-dev <软件名>
+
+npm i --save-dev jquery@1.11.1
+
+npm list -g
+set path=f：\mytest;%path%
+
+npm update <软件名>
+
+npm uninstall <软件名>
+
+npm init  
+
+3. bower
+
+安装 npm install -g bower
+
+bower -v
+
+bower help
+
+bower install jquery#3.3.1
+
+bower search html5-boilerplate
+CLI
+
+
+
+bower update
+
+bower uninstall jquery 
+批量安装
+bower init
+
+
+4. gulp
+
+gulp -v(version)
+
+gulpfile.js
+	var gulp=require('gulp'),
+		concat=require('concat');
+	gulp.task("test",function(){
+		gulp.src('src/js/*.js')
+			.pipe(concat('all.js'))
+			.pipe(gulp.dest('dist/js'))
+
+	})
+
+
+gulp test
+
+
+5. yeoman(yo)
+
+npm install -global yo
